@@ -1,0 +1,14 @@
+[project]
+name = "voice-transcribe"
+version = "0.1.0"
+description = "POC: transcribe Discord voice messages (ogg) to text with faster-whisper on GPU"
+requires-python = ">=3.10"
+dependencies = [
+    "faster-whisper>=1.2.1",
+    # CUDA math libs so ctranslate2 can use the GPU (no system CUDA install needed)
+    "nvidia-cublas-cu12",
+    "nvidia-cudnn-cu12",
+    # Discord bot
+    "discord.py>=2.4",
+    "python-dotenv>=1.0",
+]
