@@ -1,5 +1,3 @@
-# voice-transcribe
-
 A Discord bot that transcribes voice messages to text, fully locally on the GPU using
 faster-whisper (Whisper large-v3). Forward a voice message into the bot's channel and it
 replies with the transcript. No audio leaves your machine.
